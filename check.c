@@ -58,6 +58,6 @@ int square(int **map, int row_st, int col_st, int num)
 int is_safe(int **map, int row, int col, int num)
 {
 	return (row_column(map, row, col, num) &&
-			square(map, row-row%3, col-col%3, num) &&
-			map[row][col] == 0);
+		square(map, row-row%3, col-col%3, num) &&
+		map[row][col] == 0);
 }
